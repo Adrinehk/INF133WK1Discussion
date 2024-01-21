@@ -1,7 +1,188 @@
-h1{
-    
+/****************************
+        cursor
+ ****************************/    
+body{
+    margin: 0;
+    height: 100vh;
+    /* cursor: url('./imgs/icons8-3d-pointer-48.png'), auto; */
+    cursor: none;
+
 }
-.profile-img{
+.cursor{
+    width: 30px;
+    height: 30px;
+    border: 3px solid purple;
+    background-color: whitesmoke;
     border-radius: 50%;
+    position: absolute;
+    transition-duration: 0.3ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+
+}
+.cursor::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 8px solid rgb(69, 55, 220);
+    border-radius: 50%;
+    opacity: .5;
+    top: -3px;
+    left: -3px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+.expand{
+    animation: cursorAnim3 .5 forwards;
+    border:  2px solid darkslateblue;
+}
+@keyframes cursorAnim{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+@keyframes  cursorAnim2  {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.4);
+    }
     
 }
+
+@keyframes cursorAnim3{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}
+/****************************
+        navbar
+ ****************************/    
+.logo{
+    width: 150px;
+    display: inline-flex;
+    color: aliceblue;
+    transition: all 0.3;
+}
+.nav-stuff:hover{
+    transform: translateY(-20px);
+    color: lightpink;
+    transition: all 0.1;
+    background-color: orchid;
+}
+.nav-bar-unique{
+    background-color: black;
+    width: 100%;
+}
+.nav-pills{
+    align-items: center;
+}
+.insta-logo{
+    width: 40px;
+}
+.link-logo{
+    width: 40px;
+}
+.git-logo{
+    width: 40px;
+}
+.col-lg-4 {
+    height: 100px;
+    align-items: center;
+    justify-self: center
+}
+.custom-nav .nav-link{
+    color:  white;
+}
+/****************************
+        Welcome design
+ ****************************/       
+.welcome-container{
+    /* border: 2px solid brown;  */
+    text-align: center;
+    display: grid;
+    font-family: "arial";
+    font-size: 24px;
+    place-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+.typed{
+    color: #6d37b3;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2.5s steps(35,end) forwards infinite;
+    text-align: center;
+    width: 100vh;
+}
+@keyframes typing{
+    from{width: 0}
+    to {width: 100%}
+}
+/****************************
+       cover page
+ ****************************/
+.dev-text{
+    /* border: 2px solid brown; */
+    height: 100vh;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.inner-dev-text{
+    margin-top: 50%;
+    font-size: 4vh;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.inner-dev-text:hover{
+    transform: translateY(-20px);
+    color: darkorchid;
+}
+.face-container{
+    height: 100vh;
+    width: 100vh;
+    /* border: 2px solid seagreen; */
+}
+.face-container .face{
+    width: 100%;    /* Make the image fill the container width */
+    height: auto;   /* Set height to auto to maintain aspect ratio */
+    display: block; 
+    border-radius: 50%;
+    transition: opacity 0.5s ease; /* smooth transition for the opacity */
+    
+}
+.face-visible {
+    opacity: 1; /* full visibility when this class is added */
+  }
+
+/* @media screen and (max-width: 1200px ){
+    .face{
+        display: none;
+        }
+} */
+.adri-name-img{
+    font-size: large;
+
+}
+  
+
+  
+
+
+  
+ 
+  
