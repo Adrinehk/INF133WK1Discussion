@@ -110,6 +110,7 @@ body{
  ****************************/       
 .welcome-container{
     /* border: 2px solid brown;  */
+    /* background-color: rgb(233, 226, 237); */
     text-align: center;
     display: grid;
     font-family: "arial";
@@ -117,15 +118,22 @@ body{
     place-items: center;
     margin-bottom: 0;
     padding: 0;
+
+}
+.texts-welcome{
+    display: inline-block;
+    /* border: 2px solid brown;   */
+
 }
 .typed{
-    color: #6d37b3;
+    /* color: #6d37b3; */
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    animation: typing 2.5s steps(35,end) forwards infinite;
+    animation: typing 3.5s steps(35,end) forwards;
     text-align: center;
     width: 100vh;
+    font-weight: bold;
 }
 @keyframes typing{
     from{width: 0}
@@ -136,24 +144,28 @@ body{
  ****************************/
 .dev-text{
     /* border: 2px solid brown; */
-    height: 100vh;
-    width: 100vh;
+    /* background-color: rgb(233, 226, 237); */
+    height: 80vh;
+    width: 90vh;
     justify-content: center;
     align-items: center;
+
 }
 .inner-dev-text{
-    margin-top: 50%;
-    font-size: 4vh;
+    margin-top: 40%;
+    font-size: 5vh;
     font-weight: bold;
     transition: all 0.5s;
+    
 }
 .inner-dev-text:hover{
     transform: translateY(-20px);
     color: darkorchid;
 }
 .face-container{
-    height: 100vh;
-    width: 100vh;
+    border-radius: 50%;
+    height: 50vh;
+    width: 90vh;
     /* border: 2px solid seagreen; */
 }
 .face-container .face{
@@ -168,16 +180,36 @@ body{
     opacity: 1; /* full visibility when this class is added */
   }
 
-/* @media screen and (max-width: 1200px ){
-    .face{
-        display: none;
-        }
-} */
 .adri-name-img{
     font-size: large;
-
 }
-  
+@media only screen and (max-width: 991px){
+    .dev-text{
+        display: none;
+    }
+    .face-container{
+        /* border: 3px solid green; */
+        height: 80vh; /* Adjust this if needed */
+        width: 20vh; /* Adjust this if needed */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .face{
+        border: 3px solid green;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* or use 'contain' based on preference */
+    }
+     
+}
+.about-me-container{
+    height: 100vh;
+}
+/****************************
+      projects
+ ***************************/
 
   
 
