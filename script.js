@@ -26,3 +26,21 @@ document.addEventListener('click', ()=>{
 
     }, 500)
 })
+const Root = document.querySelector(".about-container");
+const Bg = document.querySelector(".bg");
+
+Root.addEventListener("mousemove", function(e) {
+    Bg.style.left = `${e.clientX}px`;
+    Bg.style.top = `${e.clientY}px`;
+});
+
+// const aboutContainer = document.querySelector(".about-container");
+// const aboutText = document.querySelector("#about p");
+
+// aboutContainer.addEventListener("mousemove", () => {
+//     aboutText.classList.add("light-text");
+// });
+
+// aboutContainer.addEventListener("mouseleave", () => {
+//     aboutText.classList.remove("light-text");
+// });

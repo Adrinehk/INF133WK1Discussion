@@ -130,7 +130,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    animation: typing 3.5s steps(35,end) forwards;
+    animation: typing 3.5s steps(35,end) forwards infinite;
     text-align: center;
     width: 100vh;
     font-weight: bold;
@@ -145,8 +145,8 @@ body{
 .dev-text{
     /* border: 2px solid brown; */
     /* background-color: rgb(233, 226, 237); */
-    height: 80vh;
-    width: 90vh;
+    height: 90vh;
+    width: 100vh;
     justify-content: center;
     align-items: center;
 
@@ -164,7 +164,7 @@ body{
 }
 .face-container{
     border-radius: 50%;
-    height: 50vh;
+    height: 60vh;
     width: 90vh;
     /* border: 2px solid seagreen; */
 }
@@ -197,21 +197,92 @@ body{
         align-items: center;
     }
     .face{
-        border: 3px solid green;
+        /* border: 3px solid green; */
         max-width: 100%;
         max-height: 100%;
         object-fit: cover; /* or use 'contain' based on preference */
     }
      
 }
-.about-me-container{
-    height: 100vh;
+
+/****************************
+      about me
+ ***************************/
+ .about-container{
+ 
+    background: black;
+    z-index: 0;
 }
+
+#about {
+    position:static;
+    height: 100vh;
+    background: url('./imgs/Hexagon.svg') repeat;
+    background-size: 400px;
+    z-index: 2; /* Ensures that #about content is above .bg */
+
+}
+#about p{
+
+    color: rgba(249, 248, 248, 0.673);
+    width: 100%;
+    /* transition: color 0.3s ease; */
+}
+/* #about p.light-text {
+    color: white; /* Text color for when the light (mouse) is over it 
+*/
+.bg {
+    position: absolute;
+    margin-top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 260px;
+    width: 260px;
+    background: linear-gradient(90deg, #335bf4, #2ae9c9 100%);
+    filter: blur(160px);
+    z-index: 0; /* Lower than #about to stay in the background */
+  }
+  @media only screen and (max-width: 800px){
+    .bg {
+        position: absolute;
+        margin-top: 85%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        height: 260px;
+        width: 260px;
+        background: linear-gradient(90deg, #335bf4, #2ae9c9 100%);
+        filter: blur(160px);
+        z-index: 0; /* Lower than #about to stay in the background */
+      }
+  }
 /****************************
       projects
  ***************************/
+ 
+ .projects-text{
+    height: 90px;
+    font-size: 45px;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+ }
+.marketing{
 
-  
+    height: 100vh;
+    width: 100vh;
+    justify-self: center;
+    align-items: center;
+    
+}
+
+#project{
+    margin-top: 0;
+    color: rgb(65, 5, 98);
+}
+.mentoning-img{
+    background-color: black;
+}
 
 
   
