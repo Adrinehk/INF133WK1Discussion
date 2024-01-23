@@ -239,9 +239,9 @@ body{
     transform: translate(-50%, -50%);
     height: 260px;
     width: 260px;
-    background: linear-gradient(90deg, #335bf4, #2ae9c9 100%);
-    filter: blur(160px);
-    z-index: 0; /* Lower than #about to stay in the background */
+    /* background: linear-gradient(90deg, #335bf4, #2ae9c9 100%); */
+    /* filter: blur(160px); */
+    /* z-index: 0; Lower than #about to stay in the background */
   }
   @media only screen and (max-width: 800px){
     .bg {
@@ -251,9 +251,9 @@ body{
         transform: translate(-50%, -50%);
         height: 260px;
         width: 260px;
-        background: linear-gradient(90deg, #335bf4, #2ae9c9 100%);
-        filter: blur(160px);
-        z-index: 0; /* Lower than #about to stay in the background */
+        /* background: linear-gradient(90deg, #335bf4, #2ae9c9 100%); */
+        /* filter: blur(160px); */
+        /* z-index: 0; Lower than #about to stay in the background */
       }
   }
 /****************************
@@ -279,7 +279,6 @@ body{
 
 #project{
     margin-top: 0;
-
     color: black;
 }
 .mentoning-img{
@@ -293,25 +292,34 @@ body{
     height: 100vh;
 }
  .interests-container{
-    height: 90vh;
+    height: 80vh;
     background-color: black;
     padding: 0;
     margin: 0;
 
  }
  .interests-container h2{
+    text-align: center;
     margin-top: 50px;
  }
 .interests-text{
     color: white;
     height: 90px;
     font-size: 45px;
-    
+
     align-items: baseline;
     font-weight: bold;
+    text-align: left;
 }
 .interest-items{
     list-style: none;
     color: white;
+    text-align: left;
 }
-  
+.team-pic-container{
+    padding-right: 0;
+}
+.team-pic{
+    padding: 0;
+    margin: 0;
+}
