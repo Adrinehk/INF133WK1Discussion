@@ -327,3 +327,18 @@ body{
     padding: 0;
     margin: 0;
 }
+@media only screen and (max-width: 1000px){
+    .interests-container li{
+        font-size: medium;
+    
+    }
+    footer{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .interests-container li{
+        font-size: large;
+    
+    }
+  }
