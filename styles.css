@@ -309,7 +309,7 @@ body{
 
     align-items: baseline;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 .interest-items{
     list-style: none;
@@ -318,6 +318,10 @@ body{
 }
 .team-pic-container{
     padding-right: 0;
+}
+.interests-container li{
+    font-size: xx-large;
+
 }
 .team-pic{
     padding: 0;
